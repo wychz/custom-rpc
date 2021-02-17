@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5567439-35d0-4bf0-a458-ac79543fed88" name="Default Changelist" comment="" />
+    <list default="true" id="b5567439-35d0-4bf0-a458-ac79543fed88" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/SingletonFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/enums/CompressTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/enums/RpcConfigEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/enums/RpcResponseCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/enums/SerializationTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/threadpool/CustomThreadPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/threadpool/ThreadPoolUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/utils/PropertiesFileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/Compress/Compress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/config/CustomShutdownHook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/register/ServiceDiscovery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/register/zookeeper/utils/CuratorUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/serializer/Serializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/client/ChannelProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/client/NettyRpcClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/client/RpcRequestTransport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/client/UnprocessedRequests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/constants/RpcConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/dto/RpcMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/dto/RpcRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/dto/RpcResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/handler/NettyRpcServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/handler/RpcMessageDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/handler/RpcMessageEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/handler/RpcRequestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/server/NettyRpcServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/Server/NettyRpcServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/provider/ServiceProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/provider/ServiceProviderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCode$UF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCode.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,11 +47,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -26,9 +65,12 @@
     </option>
   </component>
   <component name="ProjectId" id="1o7OIe2sYRG963Oov9ZAp8gVPjn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/guide-rpc-framework-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -39,6 +81,12 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="common.enums" />
+      <recent name="rpc.transport.constants" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -79,31 +127,48 @@
       <option name="presentableId" value="Default" />
       <updated>1612634083885</updated>
       <workItem from="1612634087793" duration="3516000" />
-      <workItem from="1612969996005" duration="7909000" />
+      <workItem from="1612969996005" duration="9785000" />
+      <workItem from="1613222307651" duration="12804000" />
+      <workItem from="1613361972379" duration="14588000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/TestCode.java</url>
-          <line>11</line>
-          <properties class="TestCode" method="numIslands">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
+          <line>26</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/TestCode.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/TestCode.java</url>
-          <line>61</line>
-          <properties class="TestCode.UF" method="find">
+          <line>44</line>
+          <properties class="TestCode" method="getCurValue">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

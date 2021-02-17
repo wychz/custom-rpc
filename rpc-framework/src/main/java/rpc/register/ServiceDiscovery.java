@@ -1,4 +1,7 @@
 package rpc.register;
 
-public class ServiceDiscovery {
+import java.net.InetSocketAddress;
+
+public interface ServiceDiscovery {
+    InetSocketAddress lookupService(String rpcServiceName);
 }

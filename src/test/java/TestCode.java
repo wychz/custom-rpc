@@ -1,100 +1,56 @@
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TestCode {
 
 
     @Test
     public void test() {
-        char[][] grid = {{'1','1'}};
-        System.out.println(numIslands(grid));
+        String s = "123456579";
+        System.out.println(splitIntoFibonacci(s));
     }
 
-    public int numIslands(char[][] grid) {
-        if (grid == null || grid.length == 0 || grid[0].length == 0) return 0;
-        int rows = grid.length;
-        int cols = grid[0].length;
-        int count = 0;
-        UF uf = new UF(grid);
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                if (grid[i][j] == '1') {
-                    grid[i][j] = '2';
-                    if (i - 1 >= 0 && grid[i - 1][j] == '1') {
-                        uf.union(i * cols + j, (i - 1) * cols + j);
-                    }
-                    if (i + 1 < rows && grid[i + 1][j] == '1') {
-                        uf.union(i * cols + j, (i + 1) * cols + j);
-                    }
-                    if (j - 1 >= 0 && grid[i][j - 1] == '1') {
-                        uf.union(i * cols + j, i * cols + j - 1);
-                    }
-                    if (j + 1 < cols && grid[i][j + 1] == '1') {
-                        uf.union(i * cols + j, i + cols + j + 1);
-                    }
-                }
-            }
-        }
-        return uf.getCount();
+    public List<Integer> splitIntoFibonacci(String S) {
+        List<Integer> list = new ArrayList<>();
+        backtrack(S, 0, list);
+        return list;
     }
 
-    class UF {
-        private int count;
-        private int[] parent;
-        private int[] size;
-
-        public UF(char[][] grid) {
-            count = 0;
-            int rows = grid.length;
-            int cols = grid[0].length;
-            parent = new int[rows * cols];
-            size = new int[rows * cols];
-            for(int i = 0; i < rows; i++) {
-                for(int j = 0; j < cols; j++) {
-                    if(grid[i][j] == '1') {
-                        parent[i * cols + j] = i * cols + j;
-                        count++;
-                    }
-                    size[i * cols + j] = 0;
+    private boolean backtrack(String S, int index, List<Integer> list) {
+        if(index == S.length() && list.size() >= 3) {
+            return true;
+        }
+        for(int i = index; i < S.length(); i++) {
+            long num = getCurValue(S, index, i);
+            if(num > Integer.MAX_VALUE || num < 0) {
+                break;
+            }
+            int size = list.size();
+            if(size >= 2 && list.get(size - 2) + list.get(size - 1) < num) {
+                break;
+            }
+            if(size <= 1 || list.get(size - 2) + list.get(size - 1) == num) {
+                list.add((int)num);
+                if(backtrack(S, i + 1, list)){
+                    return true;
                 }
+                list.remove(list.size() - 1);
             }
         }
+        return false;
+    }
 
-        public int find(int x) {
-            int root = x;
-            while(root != parent[root]) {
-                root = parent[root];
-            }
-            while(x != root) {
-                int temp = parent[x];
-                parent[x] = root;
-                x = temp;
-            }
-            return root;
+    private long getCurValue(String S, int left, int right) {
+        if(left < right && S.charAt(left) == '0'){
+            return -1;
         }
-
-        public void union(int x, int y) {
-            int rootP = find(x);
-            int rootQ = find(y);
-            if(rootP != rootQ) {
-                if(size[rootP] < size[rootQ]) {
-                    parent[rootP] = rootQ;
-                    size[rootQ] += size[rootP];
-                } else {
-                    parent[rootQ] = rootP;
-                    size[rootP] += size[rootQ];
-                }
-                count--;
-            } else {
-                return;
-            }
+        long sum = 0;
+        while(left <= right) {
+            sum = sum * 10 + (long) S.charAt(left);
+            left++;
         }
-
-        public boolean connected(int x, int y) {
-            return find(x) == find(y);
-        }
-
-        public int getCount() {
-            return count;
-        }
+        return sum;
     }
 }

@@ -1,18 +1,10 @@
-package github.javaguide.remoting.constants;
+package rpc.transport.constants;
 
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
-/**
- * @author wangtao .
- * @createTime on 2020/10/2
- */
 public class RpcConstants {
 
-
-    /**
-     * Magic number. Verify RpcMessage
-     */
     public static final byte[] MAGIC_NUMBER = {(byte) 'g', (byte) 'r', (byte) 'p', (byte) 'c'};
     public static final Charset DEFAULT_CHARSET = StandardCharsets.UTF_8;
     //version information

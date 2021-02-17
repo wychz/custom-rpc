@@ -4,7 +4,7 @@ import common.RpcServiceProperties;
 import common.exception.RpcException;
 import common.exception.type.RpcErrorMessageEnum;
 import lombok.extern.slf4j.Slf4j;
-import rpc.Server.NettyRpcServer;
+import rpc.transport.server.NettyRpcServer;
 import rpc.extension.ExtensionLoader;
 import rpc.register.ServiceRegistry;
 
