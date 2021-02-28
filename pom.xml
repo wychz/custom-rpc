@@ -25,6 +25,9 @@
     </properties>
     <modules>
         <module>rpc-framework</module>
+        <module>rpc-client</module>
+        <module>rpc-service</module>
+        <module>rpc-server</module>
     </modules>
 
     <dependencies>

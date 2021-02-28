@@ -1,0 +1,2 @@
+kyro=com.wyc.pro.rpc.serializer.impl.KryoSerializer
+protostuff=com.wyc.pro.rpc.serializer.impl.ProtostuffSerializer

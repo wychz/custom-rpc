@@ -2,53 +2,112 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5567439-35d0-4bf0-a458-ac79543fed88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/SingletonFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/enums/CompressTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/enums/RpcConfigEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/enums/RpcResponseCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/enums/SerializationTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/threadpool/CustomThreadPoolConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/threadpool/ThreadPoolUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/common/utils/PropertiesFileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/Compress/Compress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/config/CustomShutdownHook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/register/ServiceDiscovery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/register/zookeeper/utils/CuratorUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/serializer/Serializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/client/ChannelProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/client/NettyRpcClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/client/RpcRequestTransport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/client/UnprocessedRequests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/constants/RpcConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/dto/RpcMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/dto/RpcRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/dto/RpcResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/handler/NettyRpcServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/handler/RpcMessageDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/handler/RpcMessageEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/handler/RpcRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/server/NettyRpcServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestJava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/custom-rpc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-client/rpc-client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-client/src/main/java/com/wyc/pro/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-client/src/main/java/com/wyc/pro/NettyClientMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/annotation/RpcReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/annotation/RpcScan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/annotation/RpcService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/exception/SerializeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/spring/CustomScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/spring/CustomScannerRegistrar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/spring/SpringBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/compress/gzip/GzipCompress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/loadbalance/AbstractLoadBalance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/loadbalance/LoadBalance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/loadbalance/impl/ConsistentHashLoadBalance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/loadbalance/impl/RandomLoadBalance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/proxy/RpcClientProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/register/zookeeper/utils/impl/ZkServiceDiscovery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/register/zookeeper/utils/impl/ZkServiceRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/serializer/impl/KryoSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/serializer/impl/ProtostuffSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/transport/client/ChannelProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/transport/client/NettyRpcClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/transport/client/NettyRpcClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/resources/META-INF/extensions/com.wyc.pro.rpc.compress.compress" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/resources/META-INF/extensions/com.wyc.pro.rpc.loadbalance.LoadBalance" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/resources/META-INF/extensions/com.wyc.pro.rpc.register.ServiceDiscovery" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/resources/META-INF/extensions/com.wyc.pro.rpc.register.ServiceRegistry" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/resources/META-INF/extensions/com.wyc.pro.rpc.serializer.Serializer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-framework/src/main/resources/META-INF/extensions/com.wyc.pro.rpc.transport.client.RpcRequestTransport" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-server/src/main/java/NettyServerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-server/src/main/java/com/wyc/pro/serviceImpl/HelloServiceImpl1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-server/src/main/java/com/wyc/pro/serviceImpl/HelloServiceImpl2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-server/src/main/resources/rpc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-service/src/main/java/com.wyc.pro/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-service/src/main/java/com.wyc.pro/HelloService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rpc-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/Server/NettyRpcServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/provider/ServiceProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/provider/ServiceProviderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCode$UF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/common/RpcServiceProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/RpcServiceProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/common/SingletonFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/SingletonFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/common/enums/CompressTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/enums/CompressTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/common/enums/RpcConfigEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/enums/RpcConfigEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/common/enums/RpcResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/enums/RpcResponseCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/common/enums/SerializationTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/enums/SerializationTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/common/exception/RpcException.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/exception/RpcException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/common/exception/type/RpcErrorMessageEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/enums/RpcErrorMessageEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/common/threadpool/CustomThreadPoolConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/threadpool/CustomThreadPoolConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/common/threadpool/ThreadPoolUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/threadpool/ThreadPoolUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/common/utils/PropertiesFileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/utils/PropertiesFileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/Compress/Compress.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/compress/Compress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/config/CustomShutdownHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/config/CustomShutdownHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/extension/ExtensionLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/extension/ExtensionLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/extension/Holder.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/extension/Holder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/extension/SPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/extension/SPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/provider/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/provider/ServiceProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/provider/ServiceProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/provider/ServiceProviderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/register/ServiceDiscovery.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/register/ServiceDiscovery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/register/ServiceRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/register/ServiceRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/register/zookeeper/utils/CuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/register/zookeeper/utils/CuratorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/serializer/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/serializer/Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/client/ChannelProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/client/NettyRpcClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/client/RpcRequestTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/transport/client/RpcRequestTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/client/UnprocessedRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/transport/client/UnprocessedRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/constants/RpcConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/transport/constants/RpcConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/dto/RpcMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/transport/dto/RpcMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/dto/RpcRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/transport/dto/RpcRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/dto/RpcResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/transport/dto/RpcResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/handler/NettyRpcServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/transport/server/NettyRpcServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/handler/RpcMessageDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/transport/handler/RpcMessageDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/handler/RpcMessageEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/transport/handler/RpcMessageEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/handler/RpcRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/transport/handler/RpcRequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-framework/src/main/java/rpc/transport/server/NettyRpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/transport/server/NettyRpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestJava.java" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -59,48 +118,74 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../Source/Java/Maven/apache-maven-3.5.4" />
-        <option name="userSettingsFile" value="C:\Mine\Source\Java\Maven\apache-maven-3.5.4\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\Source\Java\Maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1o7OIe2sYRG963Oov9ZAp8gVPjn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/guide-rpc-framework-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rpc-server/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\Java\custom-rpc\rpc-framework\src\main\resources\META-INF" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="common.enums" />
       <recent name="rpc.transport.constants" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\Java\custom-rpc\rpc-server\src\main\resources" />
+      <recent name="D:\Project\Java\custom-rpc\rpc-framework\src\main\resources" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.NettyClientMain">
+    <configuration name="NettyClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wyc.pro.NettyClientMain" />
+      <module name="com.wyc.pro.rpc-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wyc.pro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettyServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NettyServerMain" />
+      <module name="rpc-server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyRpc" />
       <option name="PACKAGE_NAME" value="" />
@@ -112,9 +197,23 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NettyClientMain" />
+        <item itemvalue="Application.NettyServerMain" />
         <item itemvalue="JUnit.TestCode" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -130,6 +229,13 @@
       <workItem from="1612969996005" duration="9785000" />
       <workItem from="1613222307651" duration="12804000" />
       <workItem from="1613361972379" duration="14588000" />
+      <workItem from="1613551353391" duration="295000" />
+      <workItem from="1613551652557" duration="8809000" />
+      <workItem from="1613882490158" duration="2000" />
+      <workItem from="1614411413745" duration="14055000" />
+      <workItem from="1614440613108" duration="7311000" />
+      <workItem from="1614486620030" duration="3368000" />
+      <workItem from="1614492876845" duration="6088000" />
     </task>
     <servers />
   </component>
@@ -149,6 +255,72 @@
       </map>
     </option>
   </component>
+  <component name="WindowStateProjectService">
+    <state x="872" y="358" key="#HTTP_Proxy" timestamp="1614439769534">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="358" key="#HTTP_Proxy/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614439769534" />
+    <state x="872" y="359" key="#Project_Structure" timestamp="1614493683209">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="359" key="#Project_Structure/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614493683209" />
+    <state x="1085" y="410" key="#com.intellij.ide.util.MemberChooser" timestamp="1614445640046">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1085" y="410" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614445640046" />
+    <state x="1085" y="625" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1614413759035">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1085" y="625" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614413759035" />
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1613556951458">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1613556951458" />
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1614498416181">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614498416181" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1614498416181">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614498416181" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1614498416180">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614498416180" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1614498416181">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614498416181" />
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1614496800353">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614496800353" />
+    <state width="2517" height="492" key="GridCell.Tab.1.center" timestamp="1614496800353">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614496800353" />
+    <state width="2517" height="492" key="GridCell.Tab.1.left" timestamp="1614496800353">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614496800353" />
+    <state width="2517" height="492" key="GridCell.Tab.1.right" timestamp="1614496800353">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614496800353" />
+    <state x="781" y="342" key="SettingsEditor" timestamp="1614493439315">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="342" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614493439315" />
+    <state x="654" y="395" key="new project wizard" timestamp="1614420328766">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="654" y="395" key="new project wizard/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614420328766" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1614498287225">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1614498287225" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -161,6 +333,26 @@
           <url>file://$PROJECT_DIR$/src/test/java/TestCode.java</url>
           <line>17</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-server/src/main/java/NettyServerMain.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-client/src/main/java/com/wyc/pro/HelloController.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/rpc/register/zookeeper/utils/CuratorUtils.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-framework/src/main/java/com/wyc/pro/common/utils/PropertiesFileUtil.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/TestCode.java</url>

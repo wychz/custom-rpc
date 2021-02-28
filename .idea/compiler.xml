@@ -6,8 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="com.wyc.pro.rpc-client" />
+        <module name="rpc-server" />
         <module name="rpcframework" />
+        <module name="rpc-framework" />
+        <module name="rpc-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="rpc-client" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
